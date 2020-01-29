@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My personal portfolio",
   "main": "index.js",
-  "homepage": "https://bunnydunker.github.io/portfolio",
+  "homepage": "https://github.com/BunnyDunker/Portfolio#readme",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
@@ -17,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/BunnyDunker/Portfolio/issues"
   },
-  "homepage": "https://github.com/BunnyDunker/Portfolio#readme",
   "dependencies": {
     "gh-pages": "^2.2.0",
     "node-sass": "^4.13.0"
