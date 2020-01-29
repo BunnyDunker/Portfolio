@@ -324,6 +324,10 @@ main {
   color: #fff;
   height: 60px; }
 
+.lang-btn {
+  margin: 1rem;
+  cursor: pointer; }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
