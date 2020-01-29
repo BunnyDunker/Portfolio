@@ -9,7 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/main.css" />
-    <title>Contact Me</title>
+    <title>Test Bed</title>
   </head>
 
   <body>
@@ -56,9 +56,10 @@
 
     <main id="contact">
       <h1 class="lg-heading">Test <span class="text-secondary">Bed</span></h1>
-      <h2 class="sm-heading">
+      <h2 class="sm-heading" id="header">
         My test bed for stylings
       </h2>
+      <div id="description">hello</div>
       <div class="boxes">
         <a class="neon" href="#">
           <span></span>
@@ -72,8 +73,35 @@
 
     <footer id="main-footer">
       Copyright &copy; 2020
+      <a class="lang-btn" id="lang-btn">Français</a>
     </footer>
 
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+      const langSettings = [
+        {
+          element: "header",
+          text: {
+            eng: "My test bed for stylings",
+            fr: "Mon banc d'essai pour le style"
+          }
+        },
+        {
+          element: "description",
+          text: {
+            eng: "English Description",
+            fr: "Description Française"
+          }
+        },
+        {
+          element: "lang-btn",
+          text: {
+            eng: "Français",
+            fr: "English"
+          }
+        }
+      ];
+    </script>
+    <script src="js/languageToggle.js"></script>
   </body>
 </html>
