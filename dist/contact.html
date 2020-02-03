@@ -56,23 +56,46 @@
 
     <main id="contact">
       <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
-      <h2 class="sm-heading">
+      <h2 class="sm-heading" id="header">
         This is how to reach me...
       </h2>
       <div class="boxes">
-        <div><span class="text-secondary">Email: </span> johndoe@test.com</div>
-        <div><span class="text-secondary">Phone: </span> (123) 456-7890</div>
         <div>
-          <span class="text-secondary">Address: </span> 123 First st Jackson MS
-          11111
+          <span class="text-secondary">Email: </span> frilet.eliott@gmail.com
+        </div>
+        <div>
+          <span class="text-secondary">US Phone: </span> +1 (386) 689-8227
+        </div>
+        <div>
+          <span class="text-secondary">FR Phone: </span> +33 6 27 61 86 91
         </div>
       </div>
     </main>
 
     <footer id="main-footer">
       Copyright &copy; 2020
+      <a class="lang-btn" id="lang-btn">Français</a>
     </footer>
 
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+      const langSettings = [
+        {
+          element: "lang-btn",
+          text: {
+            eng: "Français",
+            fr: "English"
+          }
+        },
+        {
+          element: "header",
+          text: {
+            eng: "This is how to reach me...",
+            fr: "Voici comment me joindre..."
+          }
+        }
+      ];
+    </script>
+    <script src="js/languageToggle.js"></script>
   </body>
 </html>
