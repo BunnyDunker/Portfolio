@@ -57,14 +57,15 @@
     <main id="about">
       <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
       <h2 class="sm-heading">
-        It's a me
+        Software Engineer and aspiring Game Dev / Ingénieur Logiciel et aspirant
+        développeur de jeux
       </h2>
       <div class="about-info">
         <div class="bio-image"></div>
         <!-- <img src="img/portrait.jpg" alt="Eliott Frilet" class="bio-image" /> -->
         <div class="bio">
           <h3 class="text-secondary">BIO</h3>
-          <p>
+          <p id="bio">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quas
             sunt odit, explicabo aliquid, est ipsam incidunt, voluptates amet
             culpa commodi dicta quo non adipisci rerum corrupti tempora
@@ -73,9 +74,9 @@
         </div>
 
         <div class="job job-1">
-          <h3>123 Webshop</h3>
-          <h6>Front End Developer</h6>
-          <p>
+          <h3>Electronic Arts</h3>
+          <h6 id="job-1-position">Front End Developer</h6>
+          <p id="job-1-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
             cupiditate molestiae dolores voluptatem quibusdam! Consectetur at
             natus atque qui laudantium!
@@ -83,8 +84,8 @@
         </div>
 
         <div class="job job-2">
-          <h3>Lead Job</h3>
-          <h6>Lead Dev</h6>
+          <h3>Lorem</h3>
+          <h6>Ipsum</h6>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
             cupiditate molestiae dolores voluptatem quibusdam! Consectetur at
@@ -93,8 +94,8 @@
         </div>
 
         <div class="job job-3">
-          <h3>Some Job</h3>
-          <h6>Minor Pos</h6>
+          <h3>Lorem</h3>
+          <h6>Ipsum</h6>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
             cupiditate molestiae dolores voluptatem quibusdam! Consectetur at
@@ -106,8 +107,47 @@
 
     <footer id="main-footer">
       Copyright &copy; 2020
+      <a class="lang-btn" id="lang-btn">Français</a>
     </footer>
 
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+      const langSettings = [
+        {
+          element: "lang-btn",
+          text: {
+            eng: "Français",
+            fr: "English"
+          }
+        },
+        {
+          element: "bio",
+          text: {
+            eng:
+              "I am a Franco-American Software Engineer passionate about web development and video games. I have extensive experience with JavaScript, HTML and CSS as well as multiple frameworks and tools to go along with that such as: Angular, React, React Native, NodeJS, SQL, noSQL",
+            fr:
+              "Je suis un Ingénieur Logiciel Franco-Américain passioné du développement web et de jeux vidéo. J'ai une vaste expérience avec JavaScript, HTML et CSS ainsi que de multiples cadres et outils pour aller avec cela comme: Angular, React, React Native, NodeJS, SQL, noSQL"
+          }
+        },
+        {
+          element: "job-1-position",
+          text: {
+            eng: "Quality Verification Tester",
+            fr: "Testeur de vérification de la qualité"
+          }
+        },
+        // TODO: Write english and French Description for job
+        {
+          element: "job-1-description",
+          text: {
+            eng:
+              "Tested functionality of product design elements, wrote up details of bugs through Jira and Confluence, verified fixes as support for EA's development team, worked on the lead titles: The Sims 4, Apex Legends, and Madden 19",
+            fr:
+              "Test de fonctionnement des éléments de design de produit, rédaction des détails de bug via Jira et Confluence, vérification des correctifs en soutien de l'équipe de développement d'EA, travaillé sur les principaux titres: The Sims 4, Apex Legends, et Madden 19"
+          }
+        }
+      ];
+    </script>
+    <script src="js/languageToggle.js"></script>
   </body>
 </html>
