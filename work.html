@@ -45,6 +45,11 @@
               Contact Info
             </a>
           </li>
+          <li class="nav-item">
+            <a href="testbed.html" class="nav-link">
+              Test Bed
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -62,8 +67,13 @@
             </div>
             <!-- <img src="img/projects/project1.jpg" alt="Project1" /> -->
           </a>
-          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
-          <a href="#" class="btn-dark">
+          <a
+            href="https://www.youtube.com/watch?v=qV-bkK1luZg&amp=&t=40s"
+            class="btn-light"
+          >
+            <i class="fas fa-eye"></i> Project
+          </a>
+          <a href="https://github.com/Savvy-Savers/InSight" class="btn-dark">
             <i class="fab fa-github"></i> Github
           </a>
         </div>
@@ -108,8 +118,21 @@
 
     <footer id="main-footer">
       Copyright &copy; 2020
+      <a class="lang-btn" id="lang-btn">Français</a>
     </footer>
 
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+      const langSettings = [
+        {
+          element: "lang-btn",
+          text: {
+            eng: "Français",
+            fr: "English"
+          }
+        }
+      ];
+    </script>
+    <script src="js/languageToggle.js"></script>
   </body>
 </html>

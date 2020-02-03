@@ -92,6 +92,9 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
+
 * {
   box-sizing: border-box; }
 
@@ -192,13 +195,6 @@ main {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
-  .projects img {
-    width: 100%;
-    border: 3px #fff solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #eece1a;
-      transition: all 0.5s ease-out; }
   .projects .outer {
     position: relative; }
     .projects .outer:before {
@@ -214,6 +210,10 @@ main {
       left: 0;
       background-size: cover;
       border: 3px #fff solid; }
+      .projects .outer .inner:hover {
+        opacity: 0.5;
+        border-color: #eece1a;
+        transition: all 0.5s ease-out; }
   .projects .project1 {
     background: url("../img/projects/project1.jpg"); }
   .projects .project2 {
@@ -241,6 +241,64 @@ main {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+  .boxes .neon {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #eece1a;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s; }
+    .boxes .neon:hover {
+      color: #444;
+      background: #eece1a;
+      box-shadow: 0 0 10px #eece1a, 0 0 40px #eece1a, 0 0 80px #eece1a;
+      transition-delay: 1s; }
+      .boxes .neon:hover span:nth-child(1) {
+        left: 100%;
+        transition: 1s; }
+      .boxes .neon:hover span:nth-child(2) {
+        top: 100%;
+        transition: 1s;
+        transition-delay: 0.25s; }
+      .boxes .neon:hover span:nth-child(3) {
+        right: 100%;
+        transition: 1s;
+        transition-delay: 0.5s; }
+      .boxes .neon:hover span:nth-child(4) {
+        bottom: 100%;
+        transition: 1s;
+        transition-delay: 0.75s; }
+    .boxes .neon span {
+      position: absolute;
+      display: block; }
+      .boxes .neon span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #eece1a); }
+      .boxes .neon span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #eece1a); }
+      .boxes .neon span:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #eece1a); }
+      .boxes .neon span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #eece1a); }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -265,6 +323,10 @@ main {
   background: #2b2b2b;
   color: #fff;
   height: 60px; }
+
+.lang-btn {
+  margin: 1rem;
+  cursor: pointer; }
 
 @media screen and (min-width: 1171px) {
   .projects {

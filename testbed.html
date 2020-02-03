@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/913baaa33f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Test Bed</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              About Me
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link">
+              My Work
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              Contact Info
+            </a>
+          </li>
+          <li class="nav-item current">
+            <a href="testbed.html" class="nav-link">
+              Test Bed
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contact">
+      <h1 class="lg-heading">Test <span class="text-secondary">Bed</span></h1>
+      <h2 class="sm-heading" id="header">
+        My test bed for stylings
+      </h2>
+      <div id="description">hello</div>
+      <div class="boxes">
+        <a class="neon" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Neon Button
+        </a>
+      </div>
+    </main>
+
+    <footer id="main-footer">
+      Copyright &copy; 2020
+      <a class="lang-btn" id="lang-btn">Français</a>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      const langSettings = [
+        {
+          element: "lang-btn",
+          text: {
+            eng: "Français",
+            fr: "English"
+          }
+        },
+        {
+          element: "header",
+          text: {
+            eng: "My test bed for stylings",
+            fr: "Mon banc d'essai pour le style"
+          }
+        },
+        {
+          element: "description",
+          text: {
+            eng: "English Description",
+            fr: "Description Française"
+          }
+        }
+      ];
+    </script>
+    <script src="js/languageToggle.js"></script>
+  </body>
+</html>
